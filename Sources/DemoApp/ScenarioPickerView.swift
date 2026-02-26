@@ -72,3 +72,15 @@ private struct CardRowView: View {
         }
     }
 }
+
+#if DEBUG
+struct ScenarioPickerView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationStack {
+            ScenarioPickerView()
+                .navigationTitle("PaymentRecovery Demo")
+        }
+        .previewDisplayName("Scenario Picker")
+    }
+}
+#endif

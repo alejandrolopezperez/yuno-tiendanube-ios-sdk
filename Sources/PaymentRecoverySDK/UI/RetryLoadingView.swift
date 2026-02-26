@@ -44,3 +44,14 @@ struct RetryLoadingView: View {
         .padding()
     }
 }
+
+#if DEBUG
+struct RetryLoadingView_Previews: PreviewProvider {
+    static var previews: some View {
+        RetryLoadingView(message: "Processing payment...", attemptCount: 1, total: 2)
+            .previewDisplayName("Processing")
+        RetryLoadingView(message: "Retrying your payment", attemptCount: 2, total: 2)
+            .previewDisplayName("Retrying")
+    }
+}
+#endif

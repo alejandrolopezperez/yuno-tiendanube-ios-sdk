@@ -59,3 +59,27 @@ struct ErrorView: View {
         }
     }
 }
+
+#if DEBUG
+struct ErrorView_Previews: PreviewProvider {
+    static var previews: some View {
+        ErrorView(
+            message: "Your card has insufficient funds. Please use a different payment method.",
+            onDismiss: {}
+        )
+        .previewDisplayName("Insufficient Funds")
+
+        ErrorView(
+            message: "This card has been blocked. Please contact your bank.",
+            onDismiss: {}
+        )
+        .previewDisplayName("Card Blocked")
+
+        ErrorView(
+            message: "Payment processor temporarily unavailable. Please try again later.",
+            onDismiss: {}
+        )
+        .previewDisplayName("Processor Unavailable")
+    }
+}
+#endif

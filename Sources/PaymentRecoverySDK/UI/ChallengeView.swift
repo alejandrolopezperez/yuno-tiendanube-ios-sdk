@@ -98,3 +98,12 @@ struct ChallengeView: View {
         }
     }
 }
+
+#if DEBUG
+struct ChallengeView_Previews: PreviewProvider {
+    static var previews: some View {
+        ChallengeView(onApprove: {}, onCancel: {})
+            .previewDisplayName("3DS Challenge")
+    }
+}
+#endif

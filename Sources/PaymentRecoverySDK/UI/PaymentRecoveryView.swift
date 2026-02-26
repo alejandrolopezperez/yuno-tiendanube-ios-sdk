@@ -97,3 +97,16 @@ public struct PaymentRecoveryView: View {
         .padding()
     }
 }
+
+#if DEBUG
+struct PaymentRecoveryView_Previews: PreviewProvider {
+    static var previews: some View {
+        PaymentRecoveryView(card: TestCard.all[0])
+            .previewDisplayName("Instant Approval")
+        PaymentRecoveryView(card: TestCard.all[3])
+            .previewDisplayName("Suspected Fraud → 3DS")
+        PaymentRecoveryView(card: TestCard.all[5])
+            .previewDisplayName("Insufficient Funds")
+    }
+}
+#endif

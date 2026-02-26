@@ -75,3 +75,24 @@ private final class FlowLogger: ObservableObject, AnalyticsDelegate {
         Task { @MainActor in self.events.append("3DS approved at attempt \(attemptCount)") }
     }
 }
+
+#if DEBUG
+struct PaymentSimulationView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationStack {
+            PaymentSimulationView(card: TestCard.all[0])
+        }
+        .previewDisplayName("Success Flow")
+
+        NavigationStack {
+            PaymentSimulationView(card: TestCard.all[5])
+        }
+        .previewDisplayName("Hard Decline")
+
+        NavigationStack {
+            PaymentSimulationView(card: TestCard.all[4])
+        }
+        .previewDisplayName("3DS Challenge")
+    }
+}
+#endif

@@ -58,6 +58,15 @@ struct SuccessView: View {
 
 // MARK: - Animated checkmark path
 
+#if DEBUG
+struct SuccessView_Previews: PreviewProvider {
+    static var previews: some View {
+        SuccessView(onDismiss: {})
+            .previewDisplayName("Success")
+    }
+}
+#endif
+
 private struct CheckmarkShape: Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()
