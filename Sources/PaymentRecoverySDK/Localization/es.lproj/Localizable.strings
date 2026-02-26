@@ -1,0 +1,38 @@
+/* Hard decline messages */
+"insufficient_funds" = "Tu tarjeta no tiene fondos suficientes. Por favor, usa otro método de pago.";
+"expired_card" = "Esta tarjeta ha vencido. Por favor, actualiza los datos de tu tarjeta.";
+"invalid_cvv" = "El código de seguridad es incorrecto. Por favor, verifícalo e intenta nuevamente.";
+"card_blocked" = "Esta tarjeta ha sido bloqueada. Por favor, comunícate con tu banco.";
+
+/* Soft decline / transient messages */
+"processor_unavailable" = "El procesador de pagos no está disponible temporalmente. Intenta más tarde.";
+"issuer_unavailable" = "Tu banco no está disponible temporalmente. Intenta más tarde.";
+"generic_decline" = "Tu pago fue rechazado. Por favor, intenta con otro método de pago.";
+
+/* Retry UI */
+"processing" = "Procesando pago...";
+"retry_title" = "Reintentando tu pago";
+"retry_attempt" = "Intento %d de %d";
+
+/* 3DS Challenge screen */
+"challenge_bank" = "Banco Seguro";
+"challenge_title" = "Autenticación Bancaria Requerida";
+"challenge_subtitle" = "Tu banco necesita verificar esta transacción para protegerte.";
+"challenge_otp_label" = "Contraseña de un solo uso";
+"challenge_otp_placeholder" = "Ingresa el código de 6 dígitos";
+"challenge_disclaimer" = "Tu banco envió un código de autenticación a tu número de teléfono registrado.";
+"challenge_approve" = "Aprobar";
+"challenge_cancel" = "Cancelar";
+"challenge_cancelled" = "La autenticación fue cancelada. Por favor, intenta nuevamente.";
+
+/* Success screen */
+"success_title" = "¡Pago Exitoso!";
+"success_subtitle" = "Tu pedido ha sido confirmado. ¡Gracias!";
+"success_done" = "Listo";
+
+/* Error screen */
+"error_title" = "Pago Fallido";
+"error_dismiss" = "Intentar de Nuevo";
+
+/* Idle / card summary */
+"pay_now" = "Pagar Ahora";

@@ -1,0 +1,38 @@
+/* Hard decline messages */
+"insufficient_funds" = "Your card has insufficient funds. Please use a different payment method.";
+"expired_card" = "This card has expired. Please update your card details.";
+"invalid_cvv" = "The security code is incorrect. Please check and try again.";
+"card_blocked" = "This card has been blocked. Please contact your bank.";
+
+/* Soft decline / transient messages */
+"processor_unavailable" = "Payment processor temporarily unavailable. Please try again later.";
+"issuer_unavailable" = "Your bank is temporarily unreachable. Please try again later.";
+"generic_decline" = "Your payment was declined. Please try a different payment method.";
+
+/* Retry UI */
+"processing" = "Processing payment...";
+"retry_title" = "Retrying your payment";
+"retry_attempt" = "Retry %d of %d";
+
+/* 3DS Challenge screen */
+"challenge_bank" = "Secure Bank";
+"challenge_title" = "Bank Authentication Required";
+"challenge_subtitle" = "Your bank needs to verify this transaction to protect you.";
+"challenge_otp_label" = "One-Time Password";
+"challenge_otp_placeholder" = "Enter 6-digit code";
+"challenge_disclaimer" = "Your bank has sent an authentication code to your registered phone number.";
+"challenge_approve" = "Approve";
+"challenge_cancel" = "Cancel";
+"challenge_cancelled" = "Authentication was cancelled. Please try again.";
+
+/* Success screen */
+"success_title" = "Payment Successful";
+"success_subtitle" = "Your order has been confirmed. Thank you!";
+"success_done" = "Done";
+
+/* Error screen */
+"error_title" = "Payment Failed";
+"error_dismiss" = "Try Again";
+
+/* Idle / card summary */
+"pay_now" = "Pay Now";
