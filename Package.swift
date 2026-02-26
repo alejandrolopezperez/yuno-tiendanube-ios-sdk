@@ -39,6 +39,11 @@ let package = Package(
             name: "RunTests",
             dependencies: ["PaymentRecoverySDK"],
             path: "Sources/RunTests"
+        ),
+        .testTarget(
+            name: "PaymentRecoverySDKTests",
+            dependencies: ["PaymentRecoverySDK"],
+            path: "Tests/PaymentRecoverySDKTests"
         )
     ]
 )
